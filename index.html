@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>HiClone — Demo Theme</title>
+  <link rel="manifest" href="watch/manifest.json">
+  <link rel="stylesheet" href="css/styles.min.css">
+</head>
+<body>
+  <header class="header">
+    <div class="logo"><img src="images/logo.png" alt="logo"><strong>HiClone</strong></div>
+    <div class="search">
+      <input id="searchInput" placeholder="Search anime, movies, tags..." />
+      <button id="searchBtn">Search</button>
+    </div>
+    <div class="icons">☰</div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div class="left">
+        <h1>Featured picks</h1>
+        <p class="muted">A clean HiAnime-inspired theme — placeholders for images and content.</p>
+      </div>
+      <div class="right">
+        <button onclick="alert('Demo CTA')">Explore</button>
+      </div>
+    </section>
+
+    <section class="cards">
+      <h2 style="margin-top:18px">Trending</h2>
+      <div class="grid" id="grid">
+        <!-- cards injected by JS -->
+      </div>
+    </section>
+
+    <div class="footer">HiClone demo • No copyrighted media included</div>
+  </main>
+
+  <div class="debug-box" id="debug">JS: loading…</div>
+
+  <script src="js/app.min.js"></script>
+</body>
+</html>
